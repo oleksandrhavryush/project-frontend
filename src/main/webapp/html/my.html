@@ -2,11 +2,45 @@
 <head>
     <title>RPG</title>
     <script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
-    <link href="/css/my.css" rel="stylesheet">
+    <link href="/html/my.css" rel="stylesheet">
+    <script defer type="text/javascript" src="/html/script.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
 <h1>RPG admin panel</h1>
 <h2>Accounts list:</h2>
+
+<div>
+    <label for="accounts-per-page">Count per page:</label>
+    <select class="accounts-per-page" id="accounts-per-page"></select>
+</div>
+
+<table class="accounts-table">
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Race</th>
+        <th>Profession</th>
+        <th>Level</th>
+        <th>Birthday</th>
+        <th>Banned</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+
+    <tbody class="accounts-table-body">
+
+    </tbody>
+</table>
+
+<div class="pagination-buttons-container">
+    <span>Pages:</span>
+    <span class="pagination-buttons"></span>
+
+</div>
 
 </body>
 </html>
