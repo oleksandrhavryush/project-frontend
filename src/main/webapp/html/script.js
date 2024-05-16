@@ -28,6 +28,16 @@ function fillTable(pageNumber, pageSize) {
                     <td class="cell">${player.level}</td>
                     <td class="cell">${player.birthday}</td>
                     <td class="cell">${player.banned}</td>
+                    <td class="cell">
+                        <button class="edit-button">
+                            <img src="../img/edit.png" alt="edit">
+                        </button>
+                    </td>
+                    <td class="cell">
+                    <button class="delete-button">
+                            <img src="../img/delete.png" alt="delete">
+                        </button>
+                    </td>
                 </tr>`
         })
 
