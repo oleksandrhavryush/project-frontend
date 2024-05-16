@@ -21,7 +21,7 @@ function fillTable(pageNumber, pageSize) {
             let date = new Date(player.birthday);
             let formattedDate = date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
             htmlRows +=
-                `<tr>
+                `<tr class="row" data-account-id="${player.id}">
                     <td class="cell">${player.id}</td>
                     <td class="cell">${player.name}</td>
                     <td class="cell">${player.title}</td>
@@ -136,4 +136,8 @@ function deleteAccountHandler(e) {
 
 function editAccountHandler(e) {
     const accountId = e.currentTarget.value;
+    const currentRow = document.querySelector(`.row[data-account-id='${accountId}']`);
+    const currentImage = currentRow.querySelector('.edit-button img');
+
+    currentImage.src = "../img/save.png";
 }
