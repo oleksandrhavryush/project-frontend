@@ -1,5 +1,6 @@
 .players-table{
     border: 1px solid #ddd;
+    margin-left: 20px;
 }
 
 .header-cell{
@@ -24,4 +25,36 @@
 
 .hidden{
     visibility: hidden;
+}
+
+.accounts-per-page-container{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.headers{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.pagination-buttons-container{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.create-form-container{
+    margin-left: 20px;
+    box-sizing: border-box;
+    width: 300px;
+}
+
+.create-field{
+    margin: 5px;
+}
+
+.save-button{
+    font-size: 18px;
+    width: 100%;
+    margin-top: 10px;
 }
